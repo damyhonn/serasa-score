@@ -3,7 +3,17 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/SerasaScoreApplication.java">
           <value>
             <set />
           </value>
@@ -28,7 +38,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/controller/ScoreController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/controller/dto/PessoaDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/controller/dto/PessoaUniqueDTO.java">
           <value>
             <set />
           </value>
@@ -39,6 +59,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/controller/form/PessoaForm.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/controller/form/ScoreForm.java">
           <value>
             <set />
           </value>
@@ -103,6 +128,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/service/ScoreService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/service/impl/AfinidadeServideImpl.java">
           <value>
             <set />
@@ -113,12 +143,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/experian/serasascore/service/impl/ScoreServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/application.properties">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/data.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/experian/serasascore/SerasaScoreApplicationTests.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/experian/serasascore/controller/ControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/experian/serasascore/controller/PessoaControllerTest.java">
           <value>
             <set />
           </value>

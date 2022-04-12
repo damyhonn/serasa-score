@@ -10,24 +10,24 @@ import java.util.stream.Collectors;
 
 @Data
 @NoArgsConstructor
-public class PessoaDTO {
+public class PessoaUniqueDTO {
     private String nome;
-    private String cidade;
-    private String estado;
+    private String telefone;
+    private int idade;
     @JsonIgnore
     private int score;
     private String scoreDescricao;
     private List<String> estados;
 
-    public PessoaDTO(Pessoa pessoa) {
+    public PessoaUniqueDTO(Pessoa pessoa) {
         this.nome = pessoa.getNome();
-        this.cidade = pessoa.getCidade();
-        this.estado = pessoa.getEstado();
+        this.telefone = pessoa.getTelefone();
+        this.idade = pessoa.getIdade();
         this.score = pessoa.getScore();
-        this.estados = pessoa.getAfinidade() != null ? pessoa.getAfinidade().getEstados(): null;
+        this.estados = pessoa.getAfinidade() != null ? pessoa.getAfinidade().getEstados() : null;
     }
 
-    public static List<PessoaDTO> convert(List<Pessoa> pessoas) {
-        return pessoas.stream().map(PessoaDTO::new).collect(Collectors.toList());
+    public static PessoaUniqueDTO convert(Pessoa pessoa) {
+        return new PessoaUniqueDTO(pessoa);
     }
 }

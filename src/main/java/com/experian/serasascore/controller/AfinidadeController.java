@@ -28,6 +28,6 @@ public class AfinidadeController {
                                           UriComponentsBuilder uriBuilder) {
         Afinidade afinidade = afinidadeService.saveAfinidade(afinidadeForm);
         URI uri = uriBuilder.path("afinidade/{id}").buildAndExpand(afinidade.getId()).toUri();
-        return ResponseEntity.created(uri).body(afinidade);
+        return ResponseEntity.created(uri).build();
     }
 }
