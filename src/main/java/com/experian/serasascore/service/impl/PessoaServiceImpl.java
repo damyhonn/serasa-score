@@ -49,8 +49,7 @@ public class PessoaServiceImpl implements PessoaService {
 
     @Override
     public List<Pessoa> getPessoas() {
-        List<Pessoa> pessoas = pessoaRepository.findAll();
-        return pessoas;
+        return pessoaRepository.findAll();
     }
 
     @Override

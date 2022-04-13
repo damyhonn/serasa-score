@@ -12,18 +12,17 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.net.URI;
-import java.net.URISyntaxException;
 
 @SpringBootTest
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
-public class ControllerTest {
+class ControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    public void deveRetornar204NoContentParaBuscaPorId() throws Exception {
+    void deveRetornar204NoContentParaBuscaPorId() throws Exception {
         URI uri = new URI("/pessoa/15");
 
         mockMvc.perform(MockMvcRequestBuilders
@@ -32,7 +31,7 @@ public class ControllerTest {
     }
 
     @Test
-    public void deveRetornar204NoContentParaBuscaDePessoas() throws Exception {
+    void deveRetornar204NoContentParaBuscaDePessoas() throws Exception {
         URI uri = new URI("/pessoa");
 
         mockMvc.perform(MockMvcRequestBuilders.get(uri))
@@ -40,7 +39,7 @@ public class ControllerTest {
     }
 
     @Test
-    public void deveRetornar201CreatedParaInsercaoDePessoa() throws Exception {
+    void deveRetornar201CreatedParaInsercaoDePessoa() throws Exception {
         URI uri = new URI("/pessoa");
         String json = "{\n" +
                 "    \"nome\": \"Sicrano de tal\",\n" +
@@ -60,7 +59,7 @@ public class ControllerTest {
     }
 
     @Test
-    public void deveRetornarPessoaAoBuscarPorUmaInserida() throws Exception {
+    void deveRetornarPessoaAoBuscarPorUmaInserida() throws Exception {
         URI uriPostPessoa = new URI("/pessoa");
         URI uriGetPessoa = new URI("/pessoa/1");
         URI uriAfinidade = new URI("/afinidade");
