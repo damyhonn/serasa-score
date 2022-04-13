@@ -38,7 +38,7 @@ Depois executar o comando:
 
 ## Swagger
 
-Para acessar o Swagger da aplicação acesse a seguinte url:
+O Swagger da aplicação está disponível na seguinte url:
 
 ```bash
 http://localhost:8080/swagger-ui/
